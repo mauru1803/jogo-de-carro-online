@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>
+<script src="./p5.play.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+    
+    <script>
+      // Your web app's Firebase configuration
+  var firebaseConfig = {
+  apiKey: "AIzaSyBu1e2f29YWKSn_5e6NxhnShwNNFZMOgA0",
+  authDomain: "jogo-de-carro-online.firebaseapp.com",
+  databaseURL: "https://jogo-de-carro-online-default-rtdb.firebaseio.com",
+  projectId: "jogo-de-carro-online",
+  storageBucket: "jogo-de-carro-online.appspot.com",
+  messagingSenderId: "578753467627",
+  appId: "1:578753467627:web:8f86c00b195adc6565daae"
+};
+
+// Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="js/Player.js"></script>
+  <script src="js/Formulario.js"></script>
+  <script src="js/Game.js"></script>
+  
+  </head>
+  <body>
+      <script src="sketch.js"></script>
+  </body>
+</html>
