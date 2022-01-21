@@ -3,22 +3,24 @@ class Formulario{
         this.entrada=createInput("enter your name");
         this.botao=createButton("go");
         this.sejaBemVindo=createElement('h2');
+        this.jogoDeCorrida=createElement('h2');
     }
     esconder(){
         this.entrada.hide();
         this.botao.hide();
         this.sejaBemVindo.hide();
+        this.jogoDeCorrida.hide();
     }
 
 
     mostrar(playerCount){
-        var jogoDeCorrida=createElement('h2');
-        jogoDeCorrida.html("jogo de corrida");
-        jogoDeCorrida.position(400,50);
+        
+        this.jogoDeCorrida.html("jogo de corrida");
+        this.jogoDeCorrida.position(displayWidth/2-50,0);
 
         
-        this.entrada.position(130,160);
-        this.botao.position(200,230);
+        this.entrada.position(displayWidth/2-40,displayHeight/2-80);
+        this.botao.position(displayWidth/2+30,displayHeight/2);
 
         this.botao.mousePressed(()=>{
             this.entrada.hide();
@@ -31,7 +33,7 @@ class Formulario{
             player.update();
             player.updateCount(playerCount);
             this.sejaBemVindo.html("ola,seja bem vindo "+player.nome);
-            this.sejaBemVindo.position(130,100);
+            this.sejaBemVindo.position(displayWidth/2-70,displayHeight/4);
         })
     }
 }
